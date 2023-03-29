@@ -74,7 +74,7 @@ nav {
   }
   
   .intro {
-    padding: 10rem 2rem 2rem; /* Add padding to the top */
+    padding: 8rem 2rem 2rem; /* Add padding to the top */
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
@@ -105,7 +105,9 @@ nav {
   
   .featured-item img {
     width: 100%;
+    filter: blur(5px); /* Adjust the blur amount by changing the value (e.g., 2px, 4px) */
   }
+  
   
   .featured-item:not(:last-child) {
     margin-right: 1rem;
@@ -113,11 +115,12 @@ nav {
   
   .image-text {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: 350;
     text-decoration: none;
     z-index: 10;
   }
