@@ -5,25 +5,61 @@
   }
   
   body {
-    font-family: 'Arial', sans-serif;
-    background-color: #000000;
-    color: #ededed;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    background-color: #f0f0f0;
+    color: #333;
   }
-  
+
   header {
-    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
     padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+nav .left,
+nav .right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none;
+  padding: 0.5rem 2rem; /* Increase padding for more space */
+  font-size: 1.2rem;
+}
+nav {
+    padding: 1rem;
+}
+  
+  nav .left {
+    left: 20%;
+    background-color: black;
+    color: white;
   }
   
-  nav {
-    text-align: center;
+  nav .right {
+    left: 80%;
+    background-color: white;
+    color: black;
   }
   
   h1 {
-    font-size: 2rem;
-    color: rgb(36, 36, 36);
-  }
-  
+    font-weight: 100;
+  font-size: 2rem;
+  color: white;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
   main {
     display: flex;
     flex-direction: column;
@@ -35,5 +71,48 @@
     width: 100%;
     max-width: 800px;
     margin-bottom: 2rem;
+  }
+  
+  .intro {
+    padding: 10rem 2rem 2rem; /* Add padding to the top */
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .intro p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+  .featured {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .featured-item {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .featured-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .featured-item img {
+    width: 100%;
+  }
+  
+  .featured-item:not(:last-child) {
+    margin-right: 1rem;
   }
   
