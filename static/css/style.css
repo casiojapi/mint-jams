@@ -89,11 +89,10 @@ nav {
     font-size: 1.2rem;
     line-height: 1.5;
   }
-  
   .featured {
     display: flex;
     justify-content: space-between;
-    max-width: 800px;
+    max-width: 1200px; /* Increase the max-width */
     margin: 2rem auto;
     padding: 0 1rem;
   }
@@ -101,11 +100,7 @@ nav {
   .featured-item {
     flex: 1;
     text-align: center;
-  }
-  
-  .featured-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    position: relative;
   }
   
   .featured-item img {
@@ -114,5 +109,20 @@ nav {
   
   .featured-item:not(:last-child) {
     margin-right: 1rem;
+  }
+  
+  .image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    z-index: 10;
+  }
+  
+  .featured a {
+    text-decoration: none;
   }
   
