@@ -15,7 +15,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000000;
     padding: 1rem;
     position: fixed;
     top: 0;
@@ -33,9 +32,7 @@ nav .right {
   padding: 0.5rem 2rem; /* Increase padding for more space */
   font-size: 1.2rem;
 }
-nav {
-    padding: 1rem;
-}
+
   
   nav .left {
     left: 20%;
@@ -48,11 +45,25 @@ nav {
     background-color: white;
     color: black;
   }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 3rem;
+    background-color: rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
   
   h1 {
-    font-weight: 100;
+    font-weight: 300;
   font-size: 2rem;
-  color: white;
+  color: rgb(0, 0, 0);
   margin: 0;
   position: absolute;
   top: 50%;
