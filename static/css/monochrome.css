@@ -7,8 +7,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    background-color: #fffefb;
-    color: #333;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 header {
@@ -16,7 +16,6 @@ header {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -25,7 +24,6 @@ header {
 
 nav .left,
 nav .right {
-    position: absolute;
     top: 50%;
     transform: translateY(-50%);
     text-decoration: none;
@@ -37,7 +35,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -48,7 +45,6 @@ nav {
 
 nav::before {
     content: "";
-    position: absolute;
     top: 0;
     left: 0;
     right: 0;
